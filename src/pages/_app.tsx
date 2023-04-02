@@ -1,13 +1,13 @@
 import { AppProps } from 'next/app';
+// Importing the handlers for each domain
+import '@/app/auth/handlers';
+import '@/app/dashboard/handlers';
 
 import '@/styles/globals.css';
-// !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
-import '@/styles/colors.css';
 
-/**
- * !STARTERCONF info
- * ? `Layout` component is called in every page using `np` snippets. If you have consistent layout across all page, you can add it here too
- */
+import { init as initFirebase } from '@/app/firebase';
+
+initFirebase();
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
