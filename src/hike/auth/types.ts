@@ -1,4 +1,4 @@
-import { Status } from '@/app/types';
+import { Status } from '@/hike/types';
 
 export interface State {
   user: User | null;

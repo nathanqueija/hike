@@ -108,6 +108,8 @@ export const AuthenticatedLayout = ({
                   <div className='flex h-16 shrink-0 items-center'>
                     <Image
                       className='h-8 w-auto'
+                      width={100}
+                      height={100}
                       src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
                       alt='Your Company'
                     />
@@ -201,6 +203,8 @@ export const AuthenticatedLayout = ({
         <div className='flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6 pb-4'>
           <div className='flex h-16 shrink-0 items-center'>
             <Image
+              width={100}
+              height={100}
               className='h-8 w-auto'
               src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
               alt='Your Company'
@@ -335,11 +339,16 @@ export const AuthenticatedLayout = ({
               <Menu as='div' className='relative'>
                 <Menu.Button className='-m-1.5 flex items-center p-1.5'>
                   <span className='sr-only'>Open user menu</span>
-                  <Image
-                    className='h-8 w-8 rounded-full bg-gray-50'
-                    src={user.photoURL || ''}
-                    alt=''
-                  />
+                  <picture>
+                    <source srcSet={user.photoURL || ''} type='image/jpeg' />
+                    <img
+                      // width={100}
+                      // height={100}
+                      className='h-8 w-8 rounded-full bg-gray-50'
+                      src={user.photoURL || ''}
+                      alt=''
+                    />
+                  </picture>
                   <span className='hidden lg:flex lg:items-center'>
                     <span
                       className='ml-4 text-sm font-semibold leading-6 text-gray-900'

@@ -1,4 +1,4 @@
-import { Events, EventType, Listener } from '@/app/events';
+import { Events, EventType, Listener } from '@/hike/events';
 
 export function createEventSystem() {
   const listeners: Record<EventType, Array<(payload: unknown) => void>> = {};

@@ -2,8 +2,8 @@ import produce from 'immer';
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 
-import { State, User } from '@/app/auth/types';
-import { Status } from '@/app/types';
+import { State, User } from '@/hike/auth/types';
+import { Status } from '@/hike/types';
 
 export const slice = create<State>()(
   devtools(

@@ -7,9 +7,9 @@ import {
   getFirestore,
 } from 'firebase/firestore';
 
-import { User } from '@/app/auth';
-import { firebaseConfig } from '@/app/env';
-import { dispatch } from '@/app/events';
+import { User } from '@/hike/auth';
+import { firebaseConfig } from '@/hike/env';
+import { dispatch } from '@/hike/events';
 
 const googleAuthProvider = new GoogleAuthProvider();
 googleAuthProvider.setCustomParameters({ prompt: 'select_account' });

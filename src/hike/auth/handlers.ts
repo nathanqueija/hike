@@ -1,12 +1,12 @@
-import { signInFx, signOutFx } from '@/app/auth/fx';
+import { signInFx, signOutFx } from '@/hike/auth/fx';
 import {
   setSignInStatus,
   setSignOutStatus,
   setUser,
   slice,
-} from '@/app/auth/state';
-import { registerEvent } from '@/app/events';
-import { navigateFx } from '@/app/router';
+} from '@/hike/auth/state';
+import { registerEvent } from '@/hike/events';
+import { navigateFx } from '@/hike/router';
 
 registerEvent('auth/auth-changed', (payload) => {
   const currentUser = slice.getState().user;

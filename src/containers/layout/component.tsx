@@ -1,7 +1,7 @@
 import { AuthenticatedLayout as PureAuthenticatedLayout } from '@/components/layout';
 
-import { useUser } from '@/app/auth';
-import { dispatch } from '@/app/events';
+import { useUser } from '@/hike/auth';
+import { dispatch } from '@/hike/events';
 import LandingPage from '@/pages';
 
 export const AuthenticatedLayout = ({

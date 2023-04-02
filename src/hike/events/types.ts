@@ -1,5 +1,5 @@
-import { Events as AuthEvents } from '@/app/auth';
-import { Events as DashboardEvents } from '@/app/dashboard';
+import { Events as AuthEvents } from '@/hike/auth';
+import { Events as DashboardEvents } from '@/hike/dashboard';
 
 export type EventType = string;
 

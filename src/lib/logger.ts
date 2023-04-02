@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { showLogger } from '@/app/env';
+import { showLogger } from '@/hike/env';
 
 /**
  * A logger function that will only logs on development

@@ -1,8 +1,8 @@
 import { signInWithPopup } from 'firebase/auth';
 import { addDoc, doc, updateDoc } from 'firebase/firestore';
 
-import { User } from '@/app/auth';
-import { auth, authProviders, usersCollection } from '@/app/firebase';
+import { User } from '@/hike/auth';
+import { auth, authProviders, usersCollection } from '@/hike/firebase';
 
 export const upsertUser = async (user: User) => {
   if (user.id) {

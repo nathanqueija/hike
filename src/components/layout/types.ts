@@ -1,4 +1,4 @@
-import { User } from '@/app/auth';
+import { User } from '@/hike/auth';
 
 export type AuthenticatedLayoutProps = {
   user: User;

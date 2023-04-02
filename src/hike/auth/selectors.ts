@@ -1,3 +1,3 @@
-import { State } from '@/app/auth/types';
+import { State } from '@/hike/auth/types';
 
 export const user = (state: State) => state.user;

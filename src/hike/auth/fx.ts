@@ -1,5 +1,5 @@
-import { signIn, signOut } from '@/app/auth';
-import { dispatch } from '@/app/events';
+import { signIn, signOut } from '@/hike/auth';
+import { dispatch } from '@/hike/events';
 
 export const signOutFx = async () => {
   dispatch('auth/signout-status-changed', { status: 'pending' });
