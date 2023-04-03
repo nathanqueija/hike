@@ -1,9 +1,11 @@
+import Link from 'next/link';
+
 import { AuthenticatedLayout } from '@/containers/layout';
 
 const DashboardPage = () => {
   return (
     <AuthenticatedLayout>
-      <h1>DASHBOARD</h1>
+      <Link href='/api/auth/google/api'>Connect to Google Calendar</Link>
     </AuthenticatedLayout>
   );
 };
